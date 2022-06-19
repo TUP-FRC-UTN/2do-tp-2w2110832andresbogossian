@@ -1,0 +1,20 @@
+<app-header></app-header>
+<app-jsmap 
+*ngIf="isShowDivIf"
+  [zoom]="zoom"
+  [lat]="lat"
+  [lng]="lng"
+  (notify)="handleMapChange($event)"
+></app-jsmap>
+<app-mapposition
+*ngIf="isShowDivIf"
+  [zoom]="zoom"
+  [lat]="lat"
+  [lng]="lng"
+  (notify)="handleInputChange($event)"
+></app-mapposition>
+  
+<div class=" container d-flex justify-content-center animate__animated animate__lightSpeedInLeft">
+  <button (click)=toggleDisplayDivIf()>Mostrar/Ocultar</button>
+</div>
+<router-outlet></router-outlet>

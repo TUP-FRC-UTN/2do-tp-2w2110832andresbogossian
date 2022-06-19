@@ -1,0 +1,25 @@
+input{
+    background-color: rgb(0, 0, 0);
+    color: white;
+   padding: 5px;
+   margin: 5px;
+}
+
+label{
+    background-color: rgb(0, 0, 0);
+   font-family: sans-serif;
+   font-weight: bolder;
+   color: aliceblue;
+   margin: 10px;
+}
+
+*{
+    background-color: rgba(8, 7, 7, 0.797);
+    padding: 2px;
+    
+}
+
+.zoom{
+    background-color: rgba(11, 11, 11, 0.847);
+    
+}

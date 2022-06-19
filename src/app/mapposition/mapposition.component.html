@@ -1,0 +1,43 @@
+
+     
+<div   class=" zoom container   pt-3 mt-3 p-2  d-flex justify-content-center animate__animated animate__rollIn ">
+    <div >
+
+      <label  class="p-2" for="zoom">Zoom:</label>
+      <input
+        
+        (change)="notify.emit($event)"
+        name="zoom"
+        type="number"
+        [value]="zoom"
+      />
+    </div>
+
+    <div>
+      <label class="p-2" for="zoom">Latitud:</label>
+      <input
+        (change)="notify.emit($event)"
+        name="lat"
+        type="number"
+        [value]="lat"
+      />
+    </div>
+    <div>
+      <label class="p-2 " for="zoom">Longitud:</label>
+      <input
+        (change)="notify.emit($event)"
+        name="lng"
+        type="number"
+        [value]="lng"
+      />
+    </div>
+         
+
+      <!-- <div ngIf= “!isShow”>This is a div which toggles.</div> -->
+      
+
+  </div>
+  
+
+
+  
